@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form id="registrationForm" method="post" action="submit.php">
+            <h3>Personal Details</h3>
+            <div class="personal">
+                <div class="input-wrapper">
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" id="dob" name="dob" placeholder="Enter birth date">
+                    <span class="error-message" id="dob-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="phone">Mobile Number</label><br>
+                    <input type="text" id="phone" name="phone" placeholder="Enter mobile number">
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="gender">Gender</label><br>
+                    <input type="text" id="gender" name="gender" placeholder="Enter your gender">
+                    <span class="error-message" id="gender-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="occupation">Occupation</label><br>
+                    <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation">
+                    <span class="error-message" id="occupation-error"></span>
+                </div>
+            </div>
+
+            <h3>Identity Details</h3>
+            <div class="identity">
+                <div class="input-wrapper">
+                    <label for="idType">ID Type</label><br>
+                    <input type="text" id="idType" name="idType" placeholder="Enter ID type">
+                    <span class="error-message" id="idType-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="idNumber">ID Number</label><br>
+                    <input type="text" id="idNumber" name="idNumber" placeholder="Enter ID number">
+                    <span class="error-message" id="idNumber-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="issueDepartment">Issue Authority</label><br>
+                    <input type="text" id="issueDepartment" name="issueDepartment" placeholder="Enter issue department">
+                    <span class="error-message" id="issueDepartment-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="issueDate">Issue Date</label><br>
+                    <input type="date" id="issueDate" name="issueDate" placeholder="Enter ID issue date">
+                    <span class="error-message" id="issueDate-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="issueState">Issue State</label><br>
+                    <input type="text" id="issueState" name="issueState" placeholder="Enter ID issue state">
+                    <span class="error-message" id="issueState-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="expiryDate">Expiry Date</label><br>
+                    <input type="date" id="expiryDate" name="expiryDate" placeholder="Enter ID expiry date">
+                    <span class="error-message" id="expiryDate-error"></span>
+                </div>
+            </div>
+
+            <button type="submit">Next &rarr;</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
